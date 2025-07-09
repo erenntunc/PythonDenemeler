@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <div class="container ">
+        <nav class="mt-3 d-flex align-items-center  flex-end justify-content-end">
+            <a href=""><i class="bi bi-list me-2 fs-3"></i></a>
+            <a href="#"><img src="https://fotopanorama360.com/wp-content/uploads/2023/03/hdr_fotograf_nasil_cekilir.jpg"
+                    class="rounded-circle  " id="resim" alt="fotoğraf"></a>
+
+        </nav>
+    </div>
+    <div class="container  align-items-center justify-content-center d-flex mt-5" id="main">
+        <div class="row  w-75 ">
+            <div class="col-md-12 align-items-center d-flex justify-content-center mb-2  ">
+                <h1>Google</h1>
+            </div>
+            <div class="col-md-12 align-items-center d-flex justify-content-center">
+                <form class="input-group mt-2" id="form" method="GET" action="https://www.google.com/search">
+                    <input type="text" name="q" class="form-control rounded-pill" id="arama"
+                        placeholder="Google'da Ara">
+
+
+                    <button type="submit" id="mic" class="rounded-pill bg-white border-0">
+                        <i class="bi bi-search border-0"></i>
+                    </button>
+
+                    <span class="merhaba1">
+                        <a href=""><i class="bi bi-grip-horizontal fs-3"></i></a>
+                    </span>
+                    <span class="merhaba2">
+                        <a href=""><i class="bi bi-mic fs3"></i></a>
+                    </span>
+                </form>
+
+            </div>
+            <div class="mt-5 d-flex justify-content-center">
+                <div class="row" id="last">
+                    <form action="https://www.google.com/search" method="GET" id="google"
+                        class=" col-md-6 border rounded me-2 d-flex justify-content-center">
+                        <input type="hidden" name="q" id="query1">
+                        <button type="submit" class="btn btn-link text-decoration-none" id="buttona">Google'da
+                            Ara</button>
+                    </form>
+                    <form action="https://www.google.com/search" method="GET"
+                        class="col-md-6 border rounded d-flex justify-content-center" id="lucky">
+                        <input type="hidden" name="q" id="query2">
+                        <input type="hidden" name="btnI" value="1">
+                        <button type="submit" class="btn btn-link text-decoration-none" id="buttonb">
+                            Kendimi Şanslı Hissediyorum
+                        </button>
+                    </form>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <footer class="py-3 fixed-bottom" id="footer">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
+        </ul>
+        <p class="text-center text-body-secondary">© 2025 Company, Inc</p>
+    </footer>
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const aramaKutusu = document.getElementById('arama');
+    const query1 = document.getElementById('query1');
+    const query2 = document.getElementById('query2');
+
+    aramaKutusu.addEventListener('input', () => {
+      query1.value = aramaKutusu.value;
+      query2.value = aramaKutusu.value;
+    });
+  });
+</script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>

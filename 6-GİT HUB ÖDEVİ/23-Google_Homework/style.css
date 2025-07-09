@@ -1,0 +1,129 @@
+#resim{
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.wrapper{
+    height: 70vh;
+    width: 60%;
+}
+
+
+#main{
+    height: 300px;
+}
+
+h1{
+    font-size: 72px;
+     cursor: default;
+}
+
+#form{
+    width: 65%;
+    height: 42px;
+    align-items: center;
+    display: flex;
+    
+
+}
+
+#mic{
+    position: absolute;
+    left: 20px;
+    top: 13px;
+    
+    
+
+}
+
+#arama{
+border: solid;
+position: relative;
+height: 52px;
+padding-left: 50px;
+padding-right: 80px;
+
+
+}
+
+i{
+    border: none;
+    border-color: transparent;
+    background-color: transparent;
+}
+
+span{
+    z-index: 10 ;
+}
+
+
+
+.merhaba1{
+    position: absolute;
+    right: 50px;
+    top: 6px;
+    padding-left: 10px;
+    
+    
+}
+
+.merhaba2{
+position: absolute;
+    right: 25px;
+    top: 12px;
+}
+
+
+#arama:active + .merhaba1{
+    
+    position: absolute;
+    right: 50px;
+    top: 6px;
+    padding-left: 10px;
+    border-left: 1px solid;
+    
+}
+
+#last{
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 16px;
+    text-align: center ;
+    align-items: center;
+    
+    
+    
+}
+
+#google{
+    display: flex;
+    width: 200px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#lucky{
+     display: flex;
+    width: 260px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#buttona{
+    color: black;
+}
+
+#buttonb{
+    color: black;
+}
